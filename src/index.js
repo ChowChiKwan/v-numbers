@@ -4,6 +4,7 @@
 const _replace = (val) => {
   return val.replace(/[^0-9]/g, '');
 };
+
 export default {
   install(Vue) {
     Vue.directive('numbers', {
