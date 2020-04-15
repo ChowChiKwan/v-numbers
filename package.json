@@ -1,0 +1,30 @@
+{
+  "name": "v-numbers",
+  "description": "Vue.js Number Plugin",
+  "version": "1.0.1",
+  "author": "chowchikwan <chowchikwan000@gmail.com>",
+  "scripts": {
+    "build": "webpack --progress --hide-modules"
+  },
+  "main": "dist/index.min.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChowChiKwan/v-numbers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChowChiKwan/v-numbers/issues"
+  },
+  "keywords": [
+    "vue",
+    "number",
+    "numbers",
+    "vue number",
+    "vue numbers"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-latest": "^6.0.0",
+    "webpack": "^2.2.0"
+  }
+}
