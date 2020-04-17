@@ -11,14 +11,16 @@ export default {
       // 事件内部使用event.target代替el，兼容element-ui el-input
       bind(el, binding, vnode) {
         el.addEventListener('keydown', (event) => {
-          const { key } = event;
-          if (new RegExp(/[0-9]/).test(key) || key === 'Backspace') return;
+          const { ctrlKey, key } = event;
+          if (ctrlKey || new RegExp(/[0-9]/).test(key) || key === 'Backspace') return;
           event.preventDefault();
         });
 
         el.addEventListener('compositionend', (event) => {
-          event.target.value = _replace(event.target.value);
-          if (vnode.componentInstance) vnode.componentInstance.$emit('input', event.target.value);
+          setTimeout(() => {
+            event.target.value = _replace(event.target.value);
+            if (vnode.componentInstance) vnode.componentInstance.$emit('input', _replace(event.target.value));
+          }, 0);
         });
 
         el.addEventListener('paste', (event) => {
