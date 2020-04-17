@@ -1,4 +1,4 @@
-## Vue.js Numbers --- Make your <input> only number
+## Vue.js Numbers --- Make your INPUT only number
 
 ### Install
 
