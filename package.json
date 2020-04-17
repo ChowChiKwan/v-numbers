@@ -1,7 +1,7 @@
 {
   "name": "v-numbers",
   "description": "Vue.js Number Plugin",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "chowchikwan <chowchikwan000@gmail.com>",
   "scripts": {
     "build": "webpack --progress --hide-modules"
